@@ -1,0 +1,164 @@
+ http://localhost:5000/login     POST
+
+{
+   
+    "email":"saddam@gmail.com",
+    "password":"123"
+}
+
+--------------------------------------
+
+http://localhost:5000/add-product    POST
+
+
+
+{
+    "name": "nnnnnnnn",
+    "price": "20000",
+    "category": "bike",
+    "userid": "6411943e36f384416dbbb692",
+    "company": "bajaj"
+}
+
+----------------------------------
+
+http://localhost:5000/products     GET
+
+show products 
+
+[{"key":"Authorization","value":"bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsibmFtZSI6IiBodXNzYWluIiwiZW1haWwiOiJodXNzYWluQGdtYWlsLmNvbSIsIl9pZCI6IjY0NjVjNzAxY2RkZmM5NjRiODY5ZjZiNCIsIl9fdiI6MH0sImlhdCI6MTY4NDM5MTY4MiwiZXhwIjoxNjg0Mzk4ODgyfQ.oJNBM2pcdOmYgkDOSgM1Xe2mPHYVTL0UOAPGNq_iCf4","type":"text","enabled":true}]
+---------------------------------------
+delete product
+
+
+
+http://localhost:5000/product/64143301956903d3654eb7eb   POST
+
+
+--------------------------------------------------------------------------
+ http://localhost:5000/product/6414418dbc3b2ab45d288dd8   GET
+
+
+get single product
+
+--------------------------
+
+update product 
+
+http://localhost:5000/product/6414418dbc3b2ab45d288dd8    PUT
+
+{
+
+
+    "name":"aazad"
+}
+
+-------------------------
+search product
+
+http://localhost:5000/search/10   GET
+
+---------------------------------
+signup 
+
+http://localhost:5000/register  POST
+
+------------
+
+forgot password
+
+http://localhost:5000/Forget-password  POST
+
+{
+    "email":"kapilvermajaika@gmail.com"
+}
+--------------------------
+reset password
+
+http://localhost:5000/updatepassword   POST
+
+{
+
+"email":"shubham@gmail.com",
+"newPassword":"12345"
+
+}
+
+------------------------
+
+send mail
+
+
+http://localhost:5000/updatepassword  POST
+
+{"email":"kapilvermajaika@gmail.com",
+    "newPassword":"ankitsir"
+
+
+}
+
+-----------
+upload image 
+
+http://localhost:5000/i  POST
+
+
+body ke andat form data
+
+key me parma or just pas me file select ka oprtion ayga fir file
+
+
+ [{"key":"params","value":"aaa.jpeg","description":"","type":"text","enabled":true}] 
+
+-------------------------------------------------------------
+
+food delivery
+
+
+ http://localhost:9000/api/createuser      POST
+
+
+{
+    "name": "saddamhusssain",
+    "email": "saddam@gmail.com",
+    "password": "565656",
+    "location": "ujjain"
+}
+
+--------------
+login user
+
+ http://localhost:9000/api/Loginuser   POST
+
+{
+    "email": "nedeem@gmail.com",
+    "password": "111111"
+}
+
+----------------
+display data
+ http://localhost:9000/api/FoodData  GET
+-----------------
+add data
+
+
+ http://localhost:9000/api/addFoodData
+
+{
+    "categoryName": "bbb",
+    "name": "bbbccc",
+    "img": "ccbbbc",
+    "description":"bbbbb",
+    "options":[
+        {
+            "half":100,
+            "full":250
+        }
+    ]
+}
+
+
+
+
+
+
